@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane fx:id="rootLayout" prefHeight="800.0" prefWidth="1000.0" styleClass="border-pane" stylesheets="@../resources/application.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lms.controller.menu.BothController">
+	<top>
+		<HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="1000.0" styleClass="left-pane" BorderPane.alignment="TOP_LEFT">
+			<children>
+				<Button onAction="#addEditMemberClick" styleClass="menuButtons" text="Add/Edit Member">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Button onAction="#addBookCopyClick" styleClass="menuButtons" text="Add Book Copy">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Button onAction="#addBookClick" styleClass="menuButtons" text="Add Book">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Button onAction="#checkoutBookClick" styleClass="menuButtons" text="Checkout Book">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Button onAction="#searchByISBNClick" styleClass="menuButtons" text="Search By ISBN">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Button onAction="#showMemberRecordClick" styleClass="menuButtons" text="Member Record">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Hyperlink  styleClass="logoutLink"  onAction="#logOut" text="Logout" />
+			</children>
+
+		</HBox>
+	</top>
+	<center>
+		<AnchorPane fx:id="anchorPane" prefHeight="300.0" prefWidth="600.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/2.2" xmlns:fx="http://javafx.com/fxml/1">
+			<children>
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>

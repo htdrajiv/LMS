@@ -1,0 +1,25 @@
+.border-pane{
+	-fx-background-color: white;
+}
+
+.pane-frame {
+	-fx-border-color: gray;
+}
+
+.error{
+	-fx-text-fill: red;
+}
+
+.left-pane{
+	-fx-background-color: lemonchiffon;
+	-fx-max-height: inherit;
+}
+
+.menuButtons{
+	-fx-pref-height:30 ;
+	-fx-pref-width: 140 ;
+}
+
+.logoutLink{
+	-fx-font-size: 150%;
+}

@@ -1,0 +1,16 @@
+Please run TestData.java file at first. Test username and password is also located there.
+
+
+// admin role
+Login Username: admin
+Login password: admin
+
+
+// librarian role
+Login Username: lib
+Login password: lib
+
+
+// both role
+Login Username: libad
+Login password: libad

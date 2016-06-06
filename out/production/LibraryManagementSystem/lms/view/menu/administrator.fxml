@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane fx:id="rootLayout" prefHeight="800" prefWidth="1000"
+	styleClass="border-pane" stylesheets="@../resources/application.css"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="lms.controller.menu.AdministratorController">
+	<top>
+		<HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="1000.0" styleClass="left-pane" BorderPane.alignment="TOP_LEFT">
+			<children>
+				<Button onAction="#addEditMemberClick" styleClass="menuButtons" text="Add/Edit Member">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Button onAction="#addBookCopyClick" styleClass="menuButtons" text="Add Book Copy">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Button onAction="#addBookClick" styleClass="menuButtons" text="Add Book">
+					<padding>
+						<Insets left="20.0" right="20.0" />
+					</padding>
+					<HBox.margin>
+						<Insets left="20.0" />
+					</HBox.margin>
+				</Button>
+				<Label fx:id="lblMsg" />
+				<Hyperlink  styleClass="logoutLink"  onAction="#logOut" text="Logout" />
+			</children>
+		</HBox>
+	</top>
+	<center>
+		<AnchorPane fx:id="anchorPane" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/2.2" xmlns:fx="http://javafx.com/fxml/1">
+			<children>
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>
